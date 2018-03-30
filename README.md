@@ -28,11 +28,11 @@ webpack4的生产环境和开发环境是规定的
 * ModuleConcatenationPlugin插件
 * CommonsChunkPlugin插件
 
-提取公共库可用与rules同级的__optimizations__中plitChunks字段配置<br/>
-__NoEmitOnErrorsPlugin__用optimization中__noEmitOnErrors__配置<br/>
-__ModuleConcatenationPlugin__用optimization中__concatenateModules__配置<br/>
-__NamedModulesPlugin__用optimization中__namedModules__配置<br/>
-以上是比较常见的功能呢个，__ExtractTextWebpackPlugin__暂时找不到替代品
+提取公共库可用与rules同级的**optimizations**中plitChunks字段配置<br/>
+**NoEmitOnErrorsPlugin**用optimization中**noEmitOnErrors**配置<br/>
+**ModuleConcatenationPlugin**用optimization中**concatenateModules**配置<br/>
+**NamedModulesPlugin**用optimization中**namedModules**配置<br/>
+以上是比较常见的功能呢个，**ExtractTextWebpackPlugin**暂时找不到替代品
 <br/><br/>module的写法已经更改，现按照官网的写法.出口和入口已经指定，但仍然可以手动配置自己定义的出入口，比如babel-polyfill等的应用，对于有其他需求的任然可以另起文件，最后在webpack-config.js中merge
 ### 提醒
 为方便起见在此说明安装依赖
