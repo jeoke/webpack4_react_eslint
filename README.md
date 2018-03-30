@@ -5,9 +5,9 @@ webpack 4 配置
 create-react-app 的脚手架虽然实用，但是也有一些可能不符合需求的地方，如果使用eject弹出，由于webpack的配置非常复杂，不便于更改，所以自发配置是一件必要的事情
      
 
-###配置
+### 配置
 
-####特点
+#### 特点
 webpack4的生产环境和开发环境是规定的
 
      webpack --mode development 开发环境  有注释等 
@@ -33,8 +33,8 @@ __NoEmitOnErrorsPlugin__用optimization中__noEmitOnErrors__配置<br/>
 __ModuleConcatenationPlugin__用optimization中__concatenateModules__配置<br/>
 __NamedModulesPlugin__用optimization中__namedModules__配置<br/>
 以上是比较常见的功能呢个，__ExtractTextWebpackPlugin__暂时找不到替代品
-<br/>对于module的写法已经更改，现按照官网的写法，出口和入口已经指定，但仍然可以手动配置自己定义的出入口，比如babel-polyfill等的应用，对于有其他需求的任然可以另起文件，最后在webpack-config.js中merge
-###提醒
+<br/><br/>module的写法已经更改，现按照官网的写法.出口和入口已经指定，但仍然可以手动配置自己定义的出入口，比如babel-polyfill等的应用，对于有其他需求的任然可以另起文件，最后在webpack-config.js中merge
+### 提醒
 为方便起见在此说明安装依赖
 * webpack安装依赖 
 
@@ -53,8 +53,10 @@ __NamedModulesPlugin__用optimization中__namedModules__配置<br/>
      yarn add -D precss postcss-scss autoprefixer
 依赖完成，对于相关文件的配置请自行浏览官网和搜索相关配置自行组合
 * Documention 根据注释生成文档
-      yarn add -D documentation
-###结语
+      
+    yarn add -D documentation
+
+### 结语
 最后在package.json修改命令配置
 
 
@@ -70,7 +72,7 @@ __NamedModulesPlugin__用optimization中__namedModules__配置<br/>
       "build": " yarn run lint && yarn run doc && webpack --mode production",
 注意命令的组成结构在测试期间可以更改缩短等待时间
 
-#####使用指南
+##### 使用指南
 
      git clone git@github.com:jeoke/webpack4_react_eslint.git
    yarn install  或者 npm install
