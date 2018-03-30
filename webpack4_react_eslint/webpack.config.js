@@ -13,8 +13,8 @@ module.exports =  {
 	module:{
 		rules:[
           {
-             test:/\.(css|less)$/,
-             use:['css-loader','less-loader','postcss-loader']
+             test:/\.css$/,
+             use:['css-loader','postcss-loader']
           },
           {
           	test:/\.(js|jsx)$/,
