@@ -6,6 +6,7 @@ create-react-app 的脚手架虽然实用，但是也有一些可能不符合需
      
 
 ###配置
+
 ####特点
 webpack4的生产环境和开发环境是规定的
 
@@ -49,7 +50,7 @@ __NamedModulesPlugin__用optimization中__namedModules__配置<br/>
 还有相关插件，自行搜索 新建.eslintrc配置语法规则 新建.eslintignore 配置忽略模块
 * postcss.config.js 由于postcss需新建一个文件配置解析，编译等功能，单独提一下，
        
-	   yarn add -D precss postcss-scss autoprefixer
+     yarn add -D precss postcss-scss autoprefixer
 依赖完成，对于相关文件的配置请自行浏览官网和搜索相关配置自行组合
 * Documention 根据注释生成文档
       yarn add -D documentation
@@ -68,3 +69,8 @@ __NamedModulesPlugin__用optimization中__namedModules__配置<br/>
 
       "build": " yarn run lint && yarn run doc && webpack --mode production",
 注意命令的组成结构在测试期间可以更改缩短等待时间
+
+#####使用指南
+
+     git clone git@github.com:jeoke/webpack4_react_eslint.git
+   yarn install  或者 npm install
